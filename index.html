@@ -1,69 +1,93 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Piedra Papel o Tijeras</title>
-        <link href="css/styles.css" type="text/css" rel="stylesheet"/>
-        <audio id="winSound" src="sounds/win.wav"></audio>
-        <audio id="loseSound" src="sounds/lose.wav"></audio>
-    </head>
-    <body>
-        <header>
-            <h1 id="main-title">Piedra, papel o tijeras</h1>
-            <h1 id="second-title">El primero en llegar a 5 puntos gana.</h1>
-        </header>
-        <div id="main">
-            <div class="userbox">
-                <div class="human-box">
-                    <img class="playerlogo" src="img/human.svg" alt="Human logo">
-                </div>
-                <div class="comp-box">
-                    <h1 class="user-score">0</h1>
-                </div>
-                <div class="clear"></div>
-                <div class=container>
-                    <div class="usr-rock playeroption" data-option="piedra">
-                        <img class="optionlogo" src="img/rock.svg" alt="Rock logo">
-                        <h2>Piedra</h2>
-                    </div>
-                    <div class="usr-paper playeroption" data-option="papel">
-                        <img class="optionlogo" src="img/paper.svg" alt="Paper logo">
-                        <h2>Papel</h2>
-                    </div>
-                    <div class="usr-scissors playeroption" data-option="tijera">
-                        <img class="optionlogo" src="img/scissors.svg" alt="Scissors logo">
-                        <h2>Tijera</h2>
-                    </div>
-                </div>
+  <head>
+    <title>Piedra Papel o Tijeras</title>
+    <link href="css/styles.css" type="text/css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css">
+    <audio id="winSound" src="sounds/win.wav"></audio>
+    <audio id="loseSound" src="sounds/lose.wav"></audio>
+  </head>
+  <body>
+    <header>
+      <span class="header_span">Piedra, papel o tijeras</span>
+      <div class="header_img_wrapper">
+        <img id="mainlogo" src="img/rock-paper-scissors.png" alt="Main logo" />
+      </div>
+    </header>
+    <div class="main_wrapper">
+      <div class="box_wrapper">
+        <div class="userbox">
+          <div class="logo_wrapper">
+            <div class="left-box">
+              <img class="playerlogo" src="img/human.svg" alt="Human logo" />
             </div>
-            <div class="logbox">
-                <ul class="gamelog">
-                    <li>Comienza una nueva partida!</li>
-                </ul>
+            <div class="right-box">
+              <h1 class="user-score">0</h1>
             </div>
-            <div class="userbox">
-                <div class="comp-box">
-                    <img class="playerlogo" src="img/computer.svg" alt="Computer logo">
-                </div>
-                <div class="human-box">
-                    <h1 class="computer-score">0</h1>
-                </div>
-                <div class="clear"></div>
-                <div class=container>
-                    <div class="comp-rock playeroption">
-                        <img class="optionlogo" src="img/rock.svg" alt="Rock logo">
-                        <h2>Piedra</h2>
-                    </div>
-                    <div class="comp-paper playeroption">
-                        <img class="optionlogo" src="img/paper.svg" alt="Paper logo">
-                        <h2>Papel</h2>
-                    </div>
-                    <div class="comp-scissors playeroption">
-                        <img class="optionlogo" src="img/scissors.svg" alt="Scissors logo">
-                        <h2>Tijera</h2>
-                    </div>
-                </div>
+          </div>
+          <div class="container">
+            <div class="usr-rock playeroption" data-option="piedra">
+              <img class="optionlogo" src="img/rock.svg" alt="Rock logo" />
+              <h2>Piedra</h2>
             </div>
+            <div class="usr-paper playeroption" data-option="papel">
+              <img class="optionlogo" src="img/paper.svg" alt="Paper logo" />
+              <h2>Papel</h2>
+            </div>
+            <div class="usr-scissors playeroption" data-option="tijera">
+              <img
+                class="optionlogo"
+                src="img/scissors.svg"
+                alt="Scissors logo"
+              />
+              <h2>Tijera</h2>
+            </div>
+          </div>
         </div>
+        <div class="logbox">
+          <ul class="gamelog">
+            <li>Comienza una nueva partida!</li>
+          </ul>
+        </div>
+        <div class="userbox">
+          <div class="logo_wrapper">
+            <div class="right-box">
+              <img
+                class="playerlogo"
+                src="img/computer.svg"
+                alt="Computer logo"
+              />
+            </div>
+            <div class="left-box">
+              <h1 class="computer-score">0</h1>
+            </div>
+          </div>
+          <div class="container">
+            <div class="comp-rock playeroption">
+              <img class="optionlogo" src="img/rock.svg" alt="Rock logo" />
+              <h2>Piedra</h2>
+            </div>
+            <div class="comp-paper playeroption">
+              <img class="optionlogo" src="img/paper.svg" alt="Paper logo" />
+              <h2>Papel</h2>
+            </div>
+            <div class="comp-scissors playeroption">
+              <img
+                class="optionlogo"
+                src="img/scissors.svg"
+                alt="Scissors logo"
+              />
+              <h2>Tijera</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <a href="https://github.com/Jgoldenusr"><i class="fab fa-github"></i></a>
+      <br></br>
+      <h3>Copyright © 2023 Jgoldenusr</h3>
+    </footer>
     <script src="scripts/RPS.js"></script>
-    </body>
+  </body>
 </html>
