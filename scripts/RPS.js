@@ -46,6 +46,7 @@ function showLog() {
   let li = document.createElement("li");
   li.textContent = logArray[`${logArray.length - 1}`];
   gameLog.appendChild(li);
+  li.scrollIntoView();
 }
 //color transition function
 function transition(usrPick, usrResult, comPick, compResult) {
