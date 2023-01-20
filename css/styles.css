@@ -30,6 +30,7 @@ header {
   text-align: center;
   font-weight: bold;
   color: #e6e6e6;
+  user-select: none;
 }
 .mainlogo {
   margin: auto 1%;
@@ -65,7 +66,9 @@ header {
   height: min(200px, 100%);
   overflow: auto;
 }
+
 ul {
+  max-height: 200px;
   margin: 1em;
   padding-left: 0px;
   list-style-type: none;
@@ -129,6 +132,8 @@ h2,
 h3 {
   text-align: center;
   font-family: TenbyFive;
+  user-select: none;
+  cursor: pointer;
 }
 h1 {
   font-size: min(32px, 5vh);
@@ -142,7 +147,10 @@ h3 {
   color: #e6e6e6;
   font-size: min(20.8px, 5vh);
 }
-
+img,
+li {
+  user-select: none;
+}
 .fab {
   margin: auto 0.7vw;
   color: #e6e6e6;
@@ -158,15 +166,15 @@ h3 {
 }
 .win {
   background-color: cyan;
-  transition: all 0.2s;
+  transition: all 0.4s;
 }
 .lost {
   background-color: red;
-  transition: all 0.2s;
+  transition: all 0.4s;
 }
 .draw {
   background-color: yellow;
-  transition: all 0.2s;
+  transition: all 0.4s;
 }
 .clear {
   clear: both;

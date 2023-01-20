@@ -95,7 +95,7 @@ function removeTransition() {
 function playGame() {
   let userOption = this.dataset.option;
   let compOption = computerOption();
-  if (userScore < 50 && computerScore < 50) {
+  if (userScore < 5 && computerScore < 5) {
     //if user wins
     if (
       (userOption === "piedra" && compOption === "tijera") ||
@@ -110,7 +110,7 @@ function playGame() {
         `¡GANASTE el round ${round}!, ${userOption} mata ${compOption}, ${userScore}-${computerScore}`
       );
       showLog();
-      if (userScore === 50) {
+      if (userScore === 5) {
         logArray.push(
           `¡GANASTE EL JUEGO, FELICIDADES! El resultado final es ${userScore}-${computerScore}`
         );
@@ -134,7 +134,7 @@ function playGame() {
         `¡PERDISTE el round ${round}!, ${compOption} mata ${userOption}, ${userScore}-${computerScore}`
       );
       showLog();
-      if (computerScore === 50) {
+      if (computerScore === 5) {
         logArray.push(
           `¡HAS PERDIDO EL JUEGO! El resultado final es ${userScore}-${computerScore}`
         );
