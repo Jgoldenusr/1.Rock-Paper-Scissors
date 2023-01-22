@@ -41,14 +41,14 @@ header {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  height: 100%;
+  height: min(250px, 50%);
 }
 .box_wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap-reverse;
-  height: 80%;
+  height: 100%;
 }
 .userbox {
   display: flex;
@@ -192,20 +192,25 @@ li {
   font-style: normal;
 }
 @media screen and (max-width: 500px) {
+  .main_wrapper {
+    height: 100%;
+  }
   .box_wrapper {
+    display: flex;
     flex-direction: column;
     align-items: center;
     padding: 0.5em;
     height: 100%;
   }
-  .logbox,
-  .userbox {
-    flex: 1 1 20%;
+  .userbox,
+  .logbox {
+    flex: 1 1 auto;
     justify-content: center;
     margin: 0.2em;
+    height: 20%;
     width: 100%;
   }
   .logbox {
-    flex: 1 1 20%;
+    height: 30%;
   }
 }
