@@ -34,8 +34,8 @@ header {
 }
 .mainlogo {
   margin: auto 1%;
-  width: min(50px, 80%);
-  height: min(50px, 80%);
+  width: min(50px, 95%);
+  height: min(50px, 95%);
 }
 .main_wrapper {
   display: flex;
@@ -191,7 +191,7 @@ li {
   font-weight: normal;
   font-style: normal;
 }
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 800px) {
   .main_wrapper {
     height: 100%;
   }
