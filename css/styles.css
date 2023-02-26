@@ -1,6 +1,7 @@
 html {
   box-sizing: border-box;
   height: 100%;
+  font-family: TenbyFive;
 }
 *,
 *::before,
@@ -17,14 +18,14 @@ body {
 }
 header {
   display: flex;
+  padding: min(1rem, 5vh);
   justify-content: center;
   align-items: center;
   height: min(75px, 25%);
   font-size: min(50px, 5vh);
-  font-family: TenbyFive;
   background-color: #14279b;
-  border-bottom: #ffffff;
-  border-style: solid;
+  margin-bottom: 20px;
+  box-shadow: 0px 2px 0px 1px white;
 }
 .header_span {
   text-align: center;
@@ -33,9 +34,13 @@ header {
   user-select: none;
 }
 .mainlogo {
+  width: 7vh;
+  height: 100%;
   margin: auto 1%;
-  width: min(50px, 95%);
-  height: min(50px, 95%);
+}
+.logo {
+  width: inherit;
+  height: inherit;
 }
 .main_wrapper {
   display: flex;
@@ -72,7 +77,6 @@ ul {
   margin: 1em;
   padding-left: 0px;
   list-style-type: none;
-  font-family: TenbyFive;
 }
 .score_wrapper {
   height: 30%;
@@ -124,14 +128,13 @@ footer {
   align-items: center;
   height: min(75px, 25%);
   background-color: #14279b;
-  border-top: #ffffff;
-  border-style: solid;
+  box-shadow: 0px -2px 0px 1px white;
+  margin-top: 20px;
 }
 h1,
 h2,
 h3 {
   text-align: center;
-  font-family: TenbyFive;
   user-select: none;
   cursor: pointer;
 }
@@ -191,7 +194,7 @@ li {
   font-weight: normal;
   font-style: normal;
 }
-@media screen and (max-width: 800px) {
+@media only screen and (max-width: 800px) {
   .main_wrapper {
     height: 100%;
   }
