@@ -6,6 +6,8 @@ The game was meant to showcase the flexbox and CSS styling skills learned so far
 
 The page is fully responsive and was built using CSS for styling, HTML for structure and Javascript for the scripts.
 
+You can test the demo [here.](https://jgoldenusr.github.io/1.Rock-Paper-Scissors/)
+
 ## Resources
 
 [Icons](https://www.flaticon.com) (flaticon)
