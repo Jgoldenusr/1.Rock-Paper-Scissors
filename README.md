@@ -8,5 +8,5 @@ The page is fully responsive and was built using CSS for styling, HTML for struc
 
 ## Resources
 
-[Icons](https://www.flaticon.com) (flaticon)
-[Font](https://www.dafont.com/tenby-five.font) (dafont)
+- [Font icons](https://fontawesome.com) (fontawesome)
+- [Font](https://www.dafont.com/tenby-five.font) (dafont)
